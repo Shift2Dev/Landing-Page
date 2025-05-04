@@ -1,0 +1,254 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*Variables para el tema del sitio web */
+:root{
+    --primary: #0d0a6e;
+    --secundary:#A3B5CC;
+    --background: #35495e;
+    --black-text: rgb(61,61, 61);
+    --white-text:#fff;
+    --button-hover:#f03bf6;
+    --neon-text: #00F0FF;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at center, #004080, #001f40, #0b024d);
+
+}
+
+nav {
+    background-color: var(--primary);
+    height: 10vh; /* 10% del tamaño de visualización*/
+    width: 100%;
+    display: flex;
+    justify-content: space-around; /*Que la separación entre los elementos tengan el mismo tamaño*/
+    align-items: center;
+}
+
+header h1 {
+    color:var(--neon-text);
+    font-size: 4vh;
+    letter-spacing: 0.5rem;
+}
+
+
+nav ul{
+    display: flex;
+    font-size: 1.5rem;
+}
+nav ul li{
+    border-right: solid 0.1rem var(--black-text);
+}
+nav ul li:last-child{
+    border-right: none;
+}
+nav ul li a{
+    color: var(--neon-text);
+    font-size: 3rem;
+    padding: 0.8rem 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+nav ul li:hover {
+    border-bottom: 0.3rem solid rgba(234, 80, 198, 0.8);
+    transition: all 0.4s;
+}
+
+.drawer {
+    color: var(--white-text);
+    float:left;
+    cursor: pointer;
+    display: none;
+    border: solid 0.1rem var(--white-text);
+    border-radius: 0.1rem;
+}
+#ckbox {
+    display: none;
+}
+
+/* Estilos a la parte principal de la web */
+
+main {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+main h1 {
+    font-size: 4rem;
+    color: var(--white-text);
+    text-align: center;
+    margin: 1rem;
+    font-weight: 600;
+}
+
+main h2 {
+    font-size: 3rem;
+    color: var(--white-text);
+    text-align: center;
+    font-weight: 400;
+    margin-top: 3rem;
+}
+
+main p{
+    color: var(--white-text);
+    text-align: center;
+    margin: 2rem;
+    font-size: 1rem;
+}
+main form {
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+main form button {
+    margin: 0 0.5rem;
+    width: 8rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    border-radius: 5%;
+    margin-top: 3rem;
+    border: solid 1px red;
+}
+
+.primary-btn{
+    background-color: var(--primary);
+    color: var(--white-text);
+    border-style: none;
+}
+.outline-btn{
+    background-color: var(--white-text);
+    color: var(--primary);
+    border: solid 0.1rem  var(--primary);
+}
+
+.primary-btn:hover{
+    background-color: var(--white-text);
+    color: var(--primary);
+    border-style: none;
+    transition: all 0.3s;
+}
+.outline-btn:hover{
+    background-color: var(--primary);
+    color: var(--white-text);
+    border-style: none;
+    transition: all 0.3s;
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+main img {
+    height: 70vh;
+    box-shadow: 0px 10px 30px rgba(0, 255, 255, 0.4);
+    border-radius: 50%;
+    padding: 10px 5px 30px 40px;
+    background: rgba(0, 0, 0,0.1);
+
+}
+
+footer {
+    background-color: var(--primary);
+    color:var(--neon-text);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 2rem;
+    height: 10vh;
+}
+footer p {
+    margin: 0;
+}
+
+.redesSociales {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-right: 15rem;
+    height: 10vh;
+
+}
+.redesSociales li{
+    padding: 0 0.8rem;
+}
+.redesSociales li a{
+    color: white;
+    font-size: 5vh;
+    transition: 0.4s;
+}
+
+.redesSociales li a:hover{
+    color: skyblue;
+    transition: 0.5s;
+}
+
+/*************************************************/
+
+@media (max-width: 1020px) {
+    nav {
+        justify-content: flex-start;
+
+    }
+
+    .drawer {
+        display: block;
+        font-size: 2rem;
+        border: none;
+    }
+
+    nav h1 {
+        margin-left: 1rem;
+    }
+
+    ul {
+        position: fixed;
+        width: 50%;
+        height: 100vh;
+        background-color: var(--background);
+        top: 10vh;
+        left: -100%;
+        text-align: left;
+        transition: all 0.5s;
+        flex-direction: column;
+        align-content: stretch;
+    }
+
+    nav ul li {
+        padding: 1rem 0px;
+        display: flex;
+        flex-direction: column;
+        padding-left: 2rem;
+        border-bottom: solid 0.1rem rgba(201, 196, 196, 0.4);
+    }
+
+    #ckbox:checked~.menu-box {
+        left: 0px;
+    }
+    .image {
+        display: none;
+    }
+    .redesSociales {
+        display: none;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
