@@ -33,7 +33,7 @@ body{
 
 nav {
     background-color: var(--primary);
-    height: 10rem; /* 10% del tamaño de visualización*/
+    height: 10vh; /* 10% del tamaño de visualización*/
     width: 100%;
     display: flex;
     justify-content: space-around; /*Que la separación entre los elementos tengan el mismo tamaño*/
@@ -42,14 +42,14 @@ nav {
 
 header h1 {
     color:var(--neon-text);
-    font-size: 2.7rem;
+    font-size: 4vh;
     letter-spacing: 0.5rem;
 }
 
 
 nav ul{
     display: flex;
-    font-size: 1.5rem;
+    font-size: 3rem;
 }
 nav ul li{
     border-right: solid 0.1rem var(--black-text);
@@ -92,7 +92,7 @@ main {
 }
 
 main h1 {
-    font-size: 4rem;
+    font-size: 6rem;
     color: var(--white-text);
     text-align: center;
     margin: 1rem;
@@ -100,7 +100,7 @@ main h1 {
 }
 
 main h2 {
-    font-size: 3rem;
+    font-size: 4rem;
     color: var(--white-text);
     text-align: center;
     font-weight: 400;
@@ -111,7 +111,7 @@ main p{
     color: var(--white-text);
     text-align: center;
     margin: 2rem;
-    font-size: 1rem;
+    font-size: 2rem;
 }
 main form {
     position: relative;
@@ -122,8 +122,8 @@ main form {
 main form button {
     margin: 0 0.5rem;
     width: 8rem;
-    height: 2.5rem;
-    font-size: 1.2rem;
+    height: 4rem;
+    font-size: 2rem;
     border-radius: 5%;
     margin-top: 3rem;
 }
