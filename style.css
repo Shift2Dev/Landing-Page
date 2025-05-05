@@ -3,25 +3,6 @@
 Lo comento por qué así el gitHub Pages no lo detecta bien y lo pongo en el html.
 */
 
-@font-face {
-    font-family: 'Poppins';
-    src: url('fonts/Poppins-Regular.woff2') format('woff2');
-  }
-  @font-face {
-    font-family: 'Poppins';
-    src: url('fonts/Poppins-Bold.woff2') format('woff2');
-    font-weight: 700;
-  }
-  @font-face {
-    font-family: 'Poppins';
-    src: url('fonts/Poppins-SemiBold.woff2') format('woff2');
-    font-weight: 600;
-  }
-  @font-face {
-    font-family: 'Poppins';
-    src: url('fonts/Poppins-Light.woff2') format('woff2');
-    font-weight: 300;
-  }
 /*Variables para el tema del sitio web */
 :root{
     --primary: #0d0a6e;
