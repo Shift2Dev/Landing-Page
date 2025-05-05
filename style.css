@@ -18,7 +18,10 @@
     list-style: none;
     box-sizing: border-box;
 }
-
+html {
+    font-size: 16px; /* estándar base para rem */
+  } 
+  
 body{
     font-family:'Poppins', sans-serif;
     background: radial-gradient(circle at center, #004080, #001f40, #0b024d);
