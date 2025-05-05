@@ -2,6 +2,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 Lo comento por qué así el gitHub Pages no lo detecta bien y lo pongo en el html.
 */
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins-Regular.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins-Bold.woff2') format('woff2');
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+  }
+  @font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins-Light.woff2') format('woff2');
+    font-weight: 300;
+  }
 /*Variables para el tema del sitio web */
 :root{
     --primary: #0d0a6e;
@@ -125,7 +145,6 @@ main form button {
     font-size: 1.2rem;
     border-radius: 5%;
     margin-top: 3rem;
-    border: solid 1px red;
 }
 
 .primary-btn{
