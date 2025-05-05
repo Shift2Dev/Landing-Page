@@ -1,5 +1,7 @@
+/*
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+Lo comento por qué así el gitHub Pages no lo detecta bien y lo pongo en el html.
+*/
 /*Variables para el tema del sitio web */
 :root{
     --primary: #0d0a6e;
@@ -21,7 +23,7 @@
 html {
     font-size: 16px; /* estándar base para rem */
   } 
-  
+
 body{
     font-family:'Poppins', sans-serif;
     background: radial-gradient(circle at center, #004080, #001f40, #0b024d);
