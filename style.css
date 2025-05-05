@@ -232,6 +232,7 @@ footer p {
         transition: all 0.5s;
         flex-direction: column;
         align-content: stretch;
+        z-index: 2;
     }
 
     nav ul li {

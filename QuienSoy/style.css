@@ -86,114 +86,21 @@ main {
     height: 80vh;
 }
 
-/*PARTE FORMULARIO*/
-
-.contenedor {
-    width: 95%;
-    padding: 10px;
-
-}
-
-.formulario {
-    background-color: rgba(0, 0, 64, 0.8);
-    color: #fff;
-    border-radius: 15%;
-    margin-right: 20vh;
-    box-shadow: 0 0 20px rgba(0, 240, 255, 0.3);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.sobremi {
+    width: 50%;
+    height: auto;
+    color: white;
+    background-color: rgba(0, 240, 255, 0.2);
     padding: 1rem;
-    text-align: center;
-}
-
-h1 {
-    padding-top: 20px;
-    text-align: center;
-    color: var(--neon-text);
-    font-size: 48px;
-}
-
-.icon{
-    position: relative;
-    margin: 0.1rem;
-    height: 4vh;
-    width: 4vh;
-    margin-right: 1.5rem;
-    background-color: #00F0FF;
-    border-radius: 50%;
-    object-fit: cover;
-    z-index: 1;
-}
-.iconE {
-    position: relative;
-    margin: 0.1rem;
-    height: 4vh;
-    width: 4vh;
-    margin-right: 1.5rem;
-    background-color: #00F0FF;
-    border-radius: 80%;
-    object-fit: cover;
-    z-index: 1;
-}
-
-input[type="text"] {
-    text-align: start;
-    font-size: 20px;
-    width: 70%;
-    padding: 10px;
-}
-
-.input-contenedor {
+    border-radius: 0.5rem;
+    margin: 5rem;
+    box-shadow: 0 4px 20px rgba(0, 240, 255, 0.2);
     display: flex;
-    margin-bottom: 15px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    flex-wrap: wrap;
 }
-
-textarea {
-    height: 80px;
-    width: 70%;
-    font-size: 20px;
+.sobremi p {
+    font-size: 1.5rem;
 }
-
-
-.primary-btn{
-    text-align: center;
-    background-color: var(--primary);
-    color: var(--white-text);
-    border-style: none;
-    padding: 1rem;
-    margin-bottom: 2rem;
-    border-radius: 20%;
-    font-size: 20px;
-    width: auto;
-}
-.outline-btn{
-    background-color: var(--white-text);
-    color: var(--primary);
-    border: solid 0.1rem  var(--primary);
-}
-
-.primary-btn:hover{
-    background-color: var(--white-text);
-    color: var(--primary);
-    border-style: none;
-    transition: all 0.3s;
-}
-.outline-btn:hover{
-    background-color: var(--primary);
-    color: var(--white-text);
-    border-style: none;
-    transition: all 0.3s;
-}
-
-.link {
-    color:var(--neon-text) ;
-}
-
-
 
 
 .image {
@@ -247,23 +154,17 @@ footer p {
     transition: 0.5s;
 }
 
+
 @media (max-width: 1020px) {
     nav {
         justify-content: flex-start;
 
-    }
-    header h1 {
-        font-size: 1.6rem;
-    }
-    main h1 {
-        font-size: 2rem;
     }
 
     .drawer {
         display: block;
         font-size: 2rem;
         border: none;
-        
     }
 
     nav h1 {
@@ -281,7 +182,6 @@ footer p {
         transition: all 0.5s;
         flex-direction: column;
         align-content: stretch;
-        z-index: 2;
     }
 
     nav ul li {
@@ -305,9 +205,11 @@ footer p {
     footer {
         text-align: center;
     }
-
-    .formulario {
-        margin-right: 0;
-        width: 100%;
+    .sobremi {
+        width: 90%;
+        margin: 2rem auto;
+    }
+    .sobremi p {
+        font-size: 1.2rem;
     }
 }
