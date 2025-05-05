@@ -133,10 +133,19 @@ main form button {
     color: var(--white-text);
     border-style: none;
 }
+
+.primary-btn a{
+    text-decoration: none;
+    color: var(--white-text);
+}
 .outline-btn{
     background-color: var(--white-text);
     color: var(--primary);
     border: solid 0.1rem  var(--primary);
+}
+.outline-btn > a {
+    text-decoration: none;
+    color: var(--primary);
 }
 
 .primary-btn:hover{
@@ -145,12 +154,20 @@ main form button {
     border-style: none;
     transition: all 0.3s;
 }
+.primary-btn:hover a{
+    color: var(--primary);
+}
 .outline-btn:hover{
     background-color: var(--primary);
     color: var(--white-text);
     border-style: none;
     transition: all 0.3s;
 }
+.outline-btn:hover a{
+    color: var(--white-text);
+    border-style: none;
+}
+
 
 .image {
     display: flex;
