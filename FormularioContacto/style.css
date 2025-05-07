@@ -247,7 +247,7 @@ footer p {
     transition: 0.5s;
 }
 
-@media (max-width: 1020px) {
+@media (max-width: 992px) {
     nav {
         justify-content: flex-start;
 
@@ -289,6 +289,71 @@ footer p {
         display: flex;
         flex-direction: column;
         padding-left: 2rem;
+        border-bottom: solid 0.1rem rgba(201, 196, 196, 0.4);
+    }
+
+    #ckbox:checked~.menu-box {
+        left: 0px;
+    }
+    .image {
+        display: none;
+    }
+    .redesSociales {
+        display: none;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .formulario {
+        margin-right: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    nav {
+        justify-content: flex-start;
+
+    }
+    header h1 {
+        font-size: 1.4rem;
+    }
+    main h1 {
+        font-size: 1.5rem;
+    }
+
+    .drawer {
+        display: block;
+        font-size: 1.5rem;
+        border: none;
+        
+    }
+
+    nav h1 {
+        margin-left: 1rem;
+    }
+
+    ul {
+        position: fixed;
+        width: 50%;
+        height: 80vh;
+        background-color: var(--background);
+        top: 10vh;
+        left: -100%;
+        text-align: left;
+        transition: all 0.5s;
+        flex-direction: column;
+        align-content: stretch;
+        z-index: 2;
+    }
+
+    nav ul li {
+        padding: 1rem 0px;
+        display: flex;
+        font-size: 1rem;
+        flex-direction: column;
         border-bottom: solid 0.1rem rgba(201, 196, 196, 0.4);
     }
 

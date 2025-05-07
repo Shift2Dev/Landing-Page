@@ -238,19 +238,19 @@ p {
 
 
 .nivel-html {
-    width: 80%; 
-}
-.nivel-css {
     width: 70%; 
 }
+.nivel-css {
+    width: 50%; 
+}
 .nivel-java {
-    width: 65%; 
+    width: 55%; 
 }
 .nivel-sql {
-    width: 75%;
+    width: 60%;
 }
 .nivel-Git {
-    width: 50%;
+    width: 65%;
 }
 .intereses ul {
     display: grid;
@@ -267,7 +267,7 @@ p {
     margin-right: 10px;
 }
 
-@media (max-width: 1000px)
+@media (max-width: 992px)
 {
     .container{
         margin: 10px;
@@ -280,7 +280,7 @@ p {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 576px) {
     .sobremi .box
     {
         flex-direction: column;
