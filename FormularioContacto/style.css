@@ -1,26 +1,25 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /*Variables para el tema del sitio web */
-:root{
+:root {
     --primary: #0d0a6e;
-    --secundary:#A3B5CC;
+    --secundary: #A3B5CC;
     --background: #35495e;
-    --black-text: rgb(61,61, 61);
-    --white-text:#fff;
-    --button-hover:#f03bf6;
+    --black-text: rgb(61, 61, 61);
+    --white-text: #fff;
+    --button-hover: #f03bf6;
     --neon-text: #00F0FF;
 
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     list-style: none;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
     background: radial-gradient(circle at center, #004080, #001f40, #0b024d);
 
@@ -28,37 +27,46 @@ body{
 
 nav {
     background-color: var(--primary);
-    height: 10vh; /* 10% del tamaño de visualización*/
+    height: 10vh;
+    /* 10% del tamaño de visualización*/
     width: 100%;
     display: flex;
-    justify-content: space-around; /*Que la separación entre los elementos tengan el mismo tamaño*/
+    justify-content: space-around;
+    /*Que la separación entre los elementos tengan el mismo tamaño*/
     align-items: center;
 }
 
 header h1 {
-    color:var(--neon-text);
+    color: var(--neon-text);
     font-size: 4vh;
     letter-spacing: 0.5rem;
 }
 
+header a {
+    text-decoration: none;
+}
 
-nav ul{
+nav ul {
     display: flex;
     font-size: 1.5rem;
 }
-nav ul li{
+
+nav ul li {
     border-right: solid 0.1rem var(--black-text);
 }
-nav ul li:last-child{
+
+nav ul li:last-child {
     border-right: none;
 }
-nav ul li a{
+
+nav ul li a {
     color: var(--neon-text);
     font-size: 3rem;
     padding: 0.8rem 1rem;
     text-transform: uppercase;
     text-decoration: none;
 }
+
 nav ul li:hover {
     border-bottom: 0.3rem solid rgba(234, 80, 198, 0.8);
     transition: all 0.4s;
@@ -66,12 +74,13 @@ nav ul li:hover {
 
 .drawer {
     color: var(--white-text);
-    float:left;
+    float: left;
     cursor: pointer;
     display: none;
     border: solid 0.1rem var(--white-text);
     border-radius: 0.1rem;
 }
+
 #ckbox {
     display: none;
 }
@@ -114,7 +123,7 @@ h1 {
     font-size: 48px;
 }
 
-.icon{
+.icon {
     position: relative;
     margin: 0.1rem;
     height: 4vh;
@@ -125,6 +134,7 @@ h1 {
     object-fit: cover;
     z-index: 1;
 }
+
 .iconE {
     position: relative;
     margin: 0.1rem;
@@ -159,7 +169,7 @@ textarea {
 }
 
 
-.primary-btn{
+.primary-btn {
     text-align: center;
     background-color: var(--primary);
     color: var(--white-text);
@@ -170,19 +180,21 @@ textarea {
     font-size: 20px;
     width: auto;
 }
-.outline-btn{
+
+.outline-btn {
     background-color: var(--white-text);
     color: var(--primary);
-    border: solid 0.1rem  var(--primary);
+    border: solid 0.1rem var(--primary);
 }
 
-.primary-btn:hover{
+.primary-btn:hover {
     background-color: var(--white-text);
     color: var(--primary);
     border-style: none;
     transition: all 0.3s;
 }
-.outline-btn:hover{
+
+.outline-btn:hover {
     background-color: var(--primary);
     color: var(--white-text);
     border-style: none;
@@ -190,7 +202,7 @@ textarea {
 }
 
 .link {
-    color:var(--neon-text) ;
+    color: var(--neon-text);
 }
 
 
@@ -202,24 +214,26 @@ textarea {
     justify-content: center;
     position: relative;
 }
-main > div > img {
+
+main>div>img {
     height: 70vh;
     box-shadow: 0px 10px 30px rgba(0, 255, 255, 0.4);
     border-radius: 50%;
     padding: 10px 5px 30px 40px;
-    background: rgba(0, 0, 0,0.1);
+    background: rgba(0, 0, 0, 0.1);
 
 }
 
 footer {
     background-color: var(--primary);
-    color:var(--neon-text);
+    color: var(--neon-text);
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
     height: 10vh;
 }
+
 footer p {
     margin: 0;
 }
@@ -233,16 +247,18 @@ footer p {
     height: 10vh;
 
 }
-.redesSociales li{
+
+.redesSociales li {
     padding: 0 0.8rem;
 }
-.redesSociales li a{
+
+.redesSociales li a {
     color: white;
     font-size: 5vh;
     transition: 0.4s;
 }
 
-.redesSociales li a:hover{
+.redesSociales li a:hover {
     color: skyblue;
     transition: 0.5s;
 }
@@ -252,9 +268,11 @@ footer p {
         justify-content: flex-start;
 
     }
+
     header h1 {
         font-size: 1.6rem;
     }
+
     main h1 {
         font-size: 2rem;
     }
@@ -263,7 +281,7 @@ footer p {
         display: block;
         font-size: 2rem;
         border: none;
-        
+
     }
 
     nav h1 {
@@ -295,9 +313,11 @@ footer p {
     #ckbox:checked~.menu-box {
         left: 0px;
     }
+
     .image {
         display: none;
     }
+
     .redesSociales {
         display: none;
     }
@@ -317,9 +337,11 @@ footer p {
         justify-content: flex-start;
 
     }
+
     header h1 {
         font-size: 1.4rem;
     }
+
     main h1 {
         font-size: 1.5rem;
     }
@@ -328,7 +350,7 @@ footer p {
         display: block;
         font-size: 1.5rem;
         border: none;
-        
+
     }
 
     nav h1 {
@@ -360,9 +382,11 @@ footer p {
     #ckbox:checked~.menu-box {
         left: 0px;
     }
+
     .image {
         display: none;
     }
+
     .redesSociales {
         display: none;
     }

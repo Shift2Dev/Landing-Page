@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-* 
-{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
 
 }
+
 body {
     background-color: lightblue;
     display: flex;
@@ -18,35 +19,37 @@ body {
 .container {
     position: relative;
     width: 100%;
-    max-width:1000px;
+    max-width: 1000px;
     min-height: 100px;
     margin: 50px;
     background-color: aliceblue;
-    display: grid; /*El grid, hace que este elemento se entienda como una cuadrícula y los elementos hijos, se situen en columnas y filas
+    display: grid;
+    /*El grid, hace que este elemento se entienda como una cuadrícula y los elementos hijos, se situen en columnas y filas
                     que yo definiré en este caso con columnas. Al hacer el CV la parte izquierda es una columna que ocupa 1/3 (1fr) del doc y la parte
                     derecha, será 2/3 (2fr) del doc por tanto usare: grid-template-columns*/
     grid-template-columns: 1fr 2fr;
-                            /*Aqui es dodne digo que la primera columna ocupa un tercio del ancho y la 2a, 2/3 del ancho
+    /*Aqui es dodne digo que la primera columna ocupa un tercio del ancho y la 2a, 2/3 del ancho
                             1fr significa una fraccion del espacio disponible*/
 
-    box-shadow: 0 35px 55px rgba(red, green, blue, 0.1)  ;
+    box-shadow: 0 35px 55px rgba(red, green, blue, 0.1);
 }
 
 
-.container .izquierda{
+.container .izquierda {
     position: relative;
     background-color: #003147;
     padding: 40px;
 }
 
-.texto_perfil{
+.texto_perfil {
     position: relative;
-    display:flex;
+    display: flex;
     flex-direction: column;
     padding-bottom: 20px;
-    border-bottom: 1px solid  grey;
+    border-bottom: 1px solid grey;
 }
-.texto_perfil .imgBox{
+
+.texto_perfil .imgBox {
     position: relative;
     align-items: center;
     justify-content: center;
@@ -54,17 +57,21 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    overflow: hidden; /*La parte del hijo que se salga del contenedor no se verá*/
+    overflow: hidden;
+    /*La parte del hijo que se salga del contenedor no se verá*/
 }
-.imgBox  img{
+
+.imgBox img {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    object-fit: cover; /*Con esto la imagen rellena el contenedor por completo y recorta lo que sobre*/
+    object-fit: cover;
+    /*Con esto la imagen rellena el contenedor por completo y recorta lo que sobre*/
 }
-.texto_perfil h2{
+
+.texto_perfil h2 {
     color: #fff;
     font-size: 1.5rem;
     margin-top: 20px;
@@ -73,6 +80,7 @@ body {
     font-weight: 600;
     line-height: 1.4rem;
 }
+
 .texto_perfil p {
     text-align: center;
     margin-top: 0.5rem;
@@ -86,7 +94,7 @@ body {
     padding-top: 40px;
 }
 
-.titulo{
+.titulo {
     color: #fff;
     text-transform: uppercase;
     font-weight: 600;
@@ -97,6 +105,7 @@ body {
 .infoContacto ul {
     position: relative;
 }
+
 .infoContacto ul li {
     list-style: none;
     position: relative;
@@ -104,12 +113,13 @@ body {
     cursor: pointer;
 }
 
-.infoContacto ul li .icon{
+.infoContacto ul li .icon {
     display: inline-block;
     width: 30px;
     font-size: 18px;
     color: #03a9f4;
 }
+
 .infoContacto ul li span {
     color: #fff;
     font-weight: 300;
@@ -148,7 +158,8 @@ body {
 }
 
 .percent div {
-    height: 5px; /* O el alto que tú quieras para la barra */
+    height: 5px;
+    /* O el alto que tú quieras para la barra */
     background-color: #03a9f4;
     border-radius: 5px;
 }
@@ -164,7 +175,8 @@ body {
 .nivelIT {
     width: 60%;
 }
-.container .derecha{
+
+.container .derecha {
     position: relative;
     background-color: #ffffff;
     padding: 40px;
@@ -174,7 +186,7 @@ body {
     margin-bottom: 50px;
 }
 
-.titulo2{
+.titulo2 {
     color: #003147;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -191,10 +203,11 @@ p {
     margin: 20px 0;
 }
 
-.sobremi .box .year{
+.sobremi .box .year {
     min-width: 150px;
 }
-.sobremi .box .year h5{
+
+.sobremi .box .year h5 {
     text-transform: uppercase;
     color: #848c90;
     font-weight: 600;
@@ -210,48 +223,56 @@ p {
     position: relative;
     width: 100%;
     display: grid;
-    grid-template-columns: 150px 1fr; /*La  primera columna siempre ocupará 150px y la segunda el resto del espacio disponible*/
+    grid-template-columns: 150px 1fr;
+    /*La  primera columna siempre ocupará 150px y la segunda el resto del espacio disponible*/
     justify-content: center;
-    align-items: center;    
+    align-items: center;
 }
 
-.skills .box h4{
+.skills .box h4 {
     text-transform: uppercase;
     color: #848c90;
     font-weight: 500;
 }
-.skills .box .percent{
+
+.skills .box .percent {
 
     position: relative;
     width: 100%;
     height: 10px;
     background-color: #f0f0f0;
 }
-.skills .box .percent div{
+
+.skills .box .percent div {
 
     position: absolute;
     top: 0;
     left: 0;
-    height:100%;
-    background-color:#03a9f4 ;
+    height: 100%;
+    background-color: #03a9f4;
 }
 
 
 .nivel-html {
-    width: 70%; 
+    width: 70%;
 }
+
 .nivel-css {
-    width: 50%; 
+    width: 50%;
 }
+
 .nivel-java {
-    width: 55%; 
+    width: 55%;
 }
+
 .nivel-sql {
     width: 60%;
 }
+
 .nivel-Git {
     width: 65%;
 }
+
 .intereses ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -267,9 +288,8 @@ p {
     margin-right: 10px;
 }
 
-@media (max-width: 992px)
-{
-    .container{
+@media (max-width: 992px) {
+    .container {
         margin: 10px;
         grid-template-columns: 1fr;
 
@@ -281,10 +301,10 @@ p {
 }
 
 @media (max-width: 576px) {
-    .sobremi .box
-    {
+    .sobremi .box {
         flex-direction: column;
     }
+
     .sobremi .box .year {
         margin-bottom: 5px;
     }
@@ -293,5 +313,3 @@ p {
         grid-template-columns: 1fr;
     }
 }
-
-  
